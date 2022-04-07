@@ -7,6 +7,7 @@ from app.controllers.auth.LoginController import LoginController
 ROUTES = [
     Route.get("/", "WelcomeController@show"),
     Route.get("/blog", "BlogController@show"),
+    Route.post('/blog/create', 'BlogController@store')
     ]
 
 # Manually add routes from auth module
